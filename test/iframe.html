@@ -1,0 +1,26 @@
+<html>
+<body>
+
+<form name="panel1_form" method="post"
+      action="http://localhost:8080/d-solo/ACZ1hasGk/test-dashboard?orgId=1&from=1614374151166&to=1614395751166&panelId=2"
+      target="panel1_iframe">
+    <input name="Proxy-API-Key" type="hidden" value="testtest">
+</form>
+<iframe name="panel1_iframe" width="500px" height="400px"></iframe>
+
+<form name="panel2_form" method="post"
+      action="http://localhost:8080/d-solo/ACZ1hasGk/test-dashboard?orgId=1&from=1614374151166&to=1614395751166&panelId=3"
+      target="panel2_iframe">
+    <input name="Proxy-API-Key" type="hidden" value="testtest">
+</form>
+<iframe name="panel2_iframe" width="500px" height="400px"></iframe>
+
+<script>
+    window.onload = function () {
+        document.panel1_form.submit();
+        document.panel2_form.submit();
+    }
+</script>
+
+</body>
+</html>

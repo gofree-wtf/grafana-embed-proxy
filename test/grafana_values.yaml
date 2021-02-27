@@ -8,6 +8,10 @@ ingress:
 adminUser: admin
 adminPassword: admin
 
+grafana.ini:
+  security:
+    allow_embedding: true
+
 dashboardProviders:
   dashboardproviders.yaml:
     apiVersion: 1
